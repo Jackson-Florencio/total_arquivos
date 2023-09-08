@@ -1,21 +1,21 @@
 #!/bin/bash
 
-# Defina o diretório que você deseja analisar
-directory="Caminho do seu deretório"  # Substitua pelo seu diretório desejado
+# Definindo o diretório que você deseja analisar
+directory="Caminho do seu deretório"  
 
-# Verifique se o diretório existe
+# Verificando se o diretório existe
 if [ ! -d "$directory" ]; then
     echo "Diretório: $directory não encontrado"
     exit 1
 fi
 
-# Defina o nome do arquivo de saída
+# Definindo o nome do arquivo de saída
 output_file="resultado2.txt"
 
-# Crie um arquivo vazio para armazenar os resultados
+# Criando um arquivo vazio para armazenar os resultados
 > "$output_file"
 
-# Use um loop para listar os diretórios no diretório especificado
+# loop para listar os diretórios
 for dir in "$directory"/*/
 do
     num_files=$(find "$dir" -type f | wc -l)
