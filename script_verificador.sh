@@ -10,7 +10,7 @@ if [ ! -d "$directory" ]; then
 fi
 
 # Definindo o nome do arquivo de saída
-output_file="resultado2.txt"
+output_file="resultado.txt"
 
 # Criando um arquivo vazio para armazenar os resultados
 > "$output_file"
